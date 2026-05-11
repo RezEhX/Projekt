@@ -11,3 +11,11 @@ Süsteem on ehitatud LVM-põhisele kettahaldusele, mis võimaldas meil laiendada
 Süsteemi on lisatud varundusskript backup.sh , see loob regulaarseid koopaid kõigist dockeri andmemahtudest. See tagab faile ja andmeid rikke korral.
 
 Kaugtöö jaoks on rakendatud WireGuard VPN, mis tagab turvalise ja krüpteeritud ühenduse töötajate ja serveri vahel. Aitab töötada kodukontorist.
+
+Tulemüür (UFW) lisatud, server on lukus ja lubatud on ainult SSH (haldamine), VPN (kaugtöö) ja NextCloudi ja Odoo pordid.
+
+Crontab on kasutuses, igal öösel kell 3 teeb varukoopia
+
+Monitooring läbi htop'i on ka kasutuses, et näha kui palju server kasutab CPU'd ja RAM'i
+
+
