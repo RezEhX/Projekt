@@ -2,9 +2,10 @@
 
 See dokument sisaldab projekti kohta käivat teavet, sealhulgas eesmärke, funktsioone ja kasutusjuhendeid.
 
-Antud infrastruktuur on loodud 12 töötajaga raamatupidamisfirmale, lähtudes stsenaariumi kriitilisest vajadusest turvalise failijagamise järele. Süsteem on ehitatud Ubuntu Serverile, kasutades Dockeri platvormi, mis tagab teenuste isoleerituse ja kergema halduse.
+Antud infrastruktuur on loodud 12 töötajaga raamatupidamisfirmale, lähtudes stsenaariumi kriitilisest vajadusest turvalise failijagamise järele.
 
 Ubuntuserveris:
+Süsteem on ehitatud Ubuntu Serverile, kasutades Dockeri platvormi, mis tagab teenuste isoleerituse ja kergema halduse.
 
 Failihalduseks on rakendatud Nextcloud, mis pakub ise-hostitud ja turvalist alternatiivi avalikele pilveteenustele, võimaldades hallata tundlikke kliendiandmeid. Raamatupidamistoimingute ja arvelduse jaoks on paigaldatud Odoo tarkvara.
 
