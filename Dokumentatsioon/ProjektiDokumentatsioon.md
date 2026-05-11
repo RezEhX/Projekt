@@ -9,3 +9,5 @@ Failihalduseks on rakendatud Nextcloud, mis pakub ise-hostitud ja turvalist alte
 Süsteem on ehitatud LVM-põhisele kettahaldusele, mis võimaldas meil laiendada serveri mahtu 25GB-ni ilma teenuseid peatamata, tagades piisava ressursi andmemahukate rakenduste ja andmebaaside stabiilseks tööks. Kogu lahendus on skaleeritav ja hallatav koodina läbi docker-compose seadistuse.
 
 Süsteemi on lisatud varundusskript backup.sh , see loob regulaarseid koopaid kõigist dockeri andmemahtudest. See tagab faile ja andmeid rikke korral.
+
+Kaugtöö jaoks on rakendatud WireGuard VPN, mis tagab turvalise ja krüpteeritud ühenduse töötajate ja serveri vahel. Aitab töötada kodukontorist.
