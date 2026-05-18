@@ -23,3 +23,28 @@ Monitooring läbi htop'i on ka kasutuses, et näha kui palju server kasutab CPU'
 
 
 
+
+
+
+## Võrguseadistus (Staatiline IP)
+
+Selleks, et serveri taaskäivitamisel (nt elektrikatkestus või *reboot*) IP-aadress ei muutuks ja VPN-i konfiguratsioonid katki ei läheks, on serverile seadistatud staatiline IP-aadress (`10.69.41.74`).
+
+Seda tehti Ubuntu **Netplan** tööriistaga, muutes faili `/etc/netplan/00-installer-config.yaml` sisu järgnevaks:
+
+```yaml
+network:
+  ethernets:
+    ens33:
+      dhcp4: false
+      addresses:
+        - 10.69.41.74/24
+      routes:
+        - to: default
+          via: 10.69.41.1
+      nameservers:
+        addresses:
+          - 1.1.1.1
+          - 8.8.8.8
+  version: 2
+
